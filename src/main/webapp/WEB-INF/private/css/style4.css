@@ -1,0 +1,256 @@
+body {
+    background: #eee; /* fallback for old browsers */
+    font-family: "Helvetica", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #d4d4d4;
+}
+
+
+/* modifying bootstrap wide borders to smaller*/
+
+.row, .container {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0em !important;
+    width: 100% !important;
+}
+
+div .panel-group {
+    margin-bottom: 0;
+}
+
+
+
+
+/* tric with columns = body, html, all containers and divs - 100% height AND all containers and divs with overflow auto!*/
+/* so, we allowed them to grow height and fit all window height always - otherwise have a problem with left/right strips*/
+
+html, body {
+    height: 100%;
+}
+
+.container, .container > div, #forright, #context {
+    height: 100%;
+    overflow: auto;
+}
+
+#forright {
+    background: #eee;
+}
+
+/*in small mode menu and title are normal*/
+.affixs, .affixs * {
+    position: static;
+}
+
+
+@media (min-width: 780px) {
+
+    /*in normal mode menu and title are fixed*/
+    #leftmenuitems.affixs {
+    /*position: fixed;  good with short but does not work with a long menu list - found a js solution (in controller)*/
+    top:8em;
+    width:18em;
+}
+#leftsidetitle.affixs {
+    /*position: fixed; good with short but does not work with a long menu list - found a js solution (in controller)*/
+    top:1em;
+    width:18em;
+}
+
+/* adjust page title */
+    h1 {
+        font-size: 230% !important;
+        font-weight: 800 !important;
+    }
+}
+
+
+
+@media (max-width: 780px) {
+
+    /* returning normal mode for small screen */
+    .container, .container > div, #forright, #context {
+        overflow: visible;
+        background: #eee;
+     }
+
+    /* specialy set up for mobile devices */
+     table {
+       font-size: 0.8em;
+     }
+     th {
+       vertical-align: top !important;
+     }
+    .row > div {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    #for_topic .panel-title, #for_sum {
+        font-size: 0.95em;
+        font-weight: 600;
+    }
+    #leftnavbar a {
+        font-size: 1.05em;
+    }
+    /* adjustment for long words in menubar */
+    h1 {
+        font-size: 180% !important;
+        font-weight: 600 !important;
+    }
+
+    body {
+        background: #eee;
+    }
+}
+
+
+
+
+
+
+/* all bellow are fiddling with  properties*/
+
+
+
+
+
+#for_topic .panel-title, #for_sum {
+    font-weight: 600;
+}
+
+#for_sum {
+    min-height: 2.5em;
+}
+
+
+#forsidetitle {
+    padding-left: 0.5em;
+}
+
+.leftmenubar {
+    margin-bottom: 0em;
+}
+
+#leftmenuitems {
+    margin: 0;
+    padding: 0;
+}
+
+
+#leftnavbar {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#leftsidetitle {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+
+
+.nav-pills>li>a {
+    font-weight: 600;
+    font-size: 120%;
+    color: darkgreen;
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    cursor: pointer;
+}
+
+.nav-pills>li>a:hover {
+    color: darkgoldenrod !important;
+    background: #d4d4d4  !important;
+}
+
+
+.bigtopics {
+    height: 2.5em;
+}
+
+.smalltopics {
+    height: 1em;
+}
+
+
+
+
+
+table {
+    margin-bottom: 0 !important;
+}
+
+
+td, th {
+    overflow: hidden;
+    vertical-align: top;
+}
+
+thead tr {
+    background-color: #d8c6a2;
+}
+
+
+.fortable {
+    margin-bottom: 0.5em;
+}
+
+.fortable *  {
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+}
+
+.fortable div {
+    margin-top: 0.9em;
+}
+
+.fortable * > label {
+    color: darkblue;
+    margin-left: -1em;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+
+
+
+
+
+
+
+div .alert-warning {
+    padding: 0.45em;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #d8c6a2;
+    border-color: gainsboro;
+    border-width: 1px;
+}
+
+
+
+
+
+#forbutton * button {
+    font-family: Helvetica, sans-serif;
+}
+
+#forbutton {
+    margin-top: 1em;
+}
+
+#forbutton button {
+    padding-left:  2.5em;
+    padding-right: 2.5em;
+    margin-bottom: 1.5em;
+}
+
+.forbutspan {
+    margin: 0.5%;
+}
+
+
+
+

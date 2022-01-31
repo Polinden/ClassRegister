@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+        <!-- Angular Material requires Angular.js Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="../public/css/bootstrap.min.css">
+  	<link rel="stylesheet" type="text/css" href="../public/css/style3.css">
+</head>
+
+
+
+
+<body ng-app="MyApp" ng-controller="DemoCtrl" ng-cloak  ng-keypress="lounch($event)">
+
+
+
+ <div class="row">
+ <div class="col-sm-6 col-sm-offset-3">
+    <h1 style="text-align: center">Ліцей 145 "КПНЛ"</h1>
+    <h4 id="subtitle" style="text-align: center">Журнал успішності</h4>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
+    <form id="logform" name="clientlogin" action='../login' method="POST" novalidate>
+        <div class="form-group" ng-class="{ 'has-error': checkForm1() }">
+            <label class="forlabelinput" for="name">Логiн</label><br/>
+            <div class="input-group">
+    	       <span class="input-group-addon"><img  src="../public/icons/person_green.svg"/></span>
+               <input   class="form-control" ng-blur="notfirstAt=true" ng-model="user.name"  type="text" id="name" name="username"
+                        placeholder="Логин" autofocus="true" autocomplete="off" required>
+            </div>
+        </div>
+        <div class="form-group" ng-class="{ 'has-error': checkForm2() }">
+        <label class="forlabelinput" for="password">Пароль</label><br/>
+            <div class="input-group">
+    	       <span class="input-group-addon" ><img  src="../public/icons/school_blue.svg"></img></span>
+               <input ng-model="user.password" type="password" id="password" name="password" class="form-control"
+                      placeholder="Пароль" required>
+	    </div>
+        </div>
+        <div class="form-group" style="padding-top: 2em;"><a style="color: #835C3B;" href="./recover.html">Втратили пароль?</a>
+            <button type="button" ng-click="subMe()"  class="btn btn-primary">Вiдправити</button>
+        </div>
+    </form>
+</div>
+</div>
+ 
+
+<footer>
+   <div style="text-align: center;">
+   <a class="visible-sm visible-md visible-lg" href="http://www.lic145.kiev.ua/" target="_blank"><img src="../public/icons/gerb.png"></a>
+   </div>
+</footer>
+
+
+
+
+
+
+
+  <!-- Controller  -->
+  <script type="text/javascript">
+    var app = angular.module('MyApp', []);
+        app.controller('DemoCtrl', function( $scope ) {
+            $scope.user = {
+                name : "",
+                password : "",
+                valid: function(){
+                    return (this.name && !/^\s*$/.test(this.name)) &&
+                           (this.password && !/^\s*$/.test(this.password));
+                }
+            };
+
+
+            $scope.notfirstAt=false;
+
+            $scope.checkForm1=function(){
+               return $scope.clientlogin.username.$invalid && $scope.notfirstAt;
+            };
+
+        $scope.checkForm2=function(){
+           return $scope.clientlogin.password.$invalid && $scope.notfirstAt;
+        };
+
+        $scope.subMe = function(){
+                if ($scope.user.valid()) document.forms['logform'].submit();
+                $scope.notfirstAt=true;
+                document.getElementsByTagName('input')[1].focus();
+                if ($scope.clientlogin.username.$invalid) document.getElementsByTagName('input')[0].focus();
+
+        };
+        $scope.lounch = function(event){
+             if (event.keyCode==13) $scope.subMe();
+        };
+     });
+  </script>
+
+ 
+ 
+   
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html, body {
+    height: 90%;
+    background-color: #DCCA93;
+}
+form {
+    font-family: Arial, serif;
+    background: #2a5161;
+    padding: 30px;
+    margin: 3%;
+    margin-left: 35%;
+    margin-right: 35%;
+    min-width:380px;
+}
+form input,
+form textarea {
+    border-radius: 0;
+    padding: 15px 0px 10px;
+    height: auto;
+    border: 0;
+    border-bottom: 1px solid gray;
+    background-color: transparent;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #fff;
+}
+
+form input:focus,
+form textarea:focus {
+    border-bottom: 1px solid lightgray;
+    papa: #d2d51a;
+    background-color: transparent;
+}
+
+form input::-webkit-input-placeholder {
+    color: #fff;
+}
+form input-group textarea::-webkit-input-placeholder {
+    color: #fff;
+}
+form label {
+    display: none;
+}
+h3, p, h5 {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.but, .but:focus{
+    cursor: pointer;
+    border-bottom: none;
+    margin-right: 50px;
+}
+.but:hover{
+    color: lightgray;
+    border-bottom: none;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 0;
+}
+td{
+    padding-right: 50px;
+}
+
+</style>
+</head>
+
+<script src='https://www.google.com/recaptcha/api.js?hl=ru'></script>
+<form action="recoverypass" method="POST" enctype="utf8">
+<h3>Запит на відновлення пароля</h3>
+<br><br>
+<div class="g-recaptcha" data-sitekey="6LeqWlIUAAAAAEAZAXT-rYyrrkd0uwm7fxA9sSi4"></div>
+<br><br><br>
+<p>Ваш E-mail:</p>
+<input name="mail"  placeholder="mail@gmail.com" id="mail" type="email" size="35" maxlength="40" required>
+<p>Прізвище та ініціали:</p>
+<input type="text" placeholder="Iванов А.Я." name="name" maxlength="40" size="35" required>
+<table>
+<tr><td><p>Клас:</p></td><td><p>Ви викладач?</p></td></tr>
+<tr><td><input type="text" pattern="[123456789]{0,1}[1234567890]{0,1}[ABabАБВГДЕабвгде]{1,1}" name="form" id="form" maxlength="3" size="3" placeholder="11А"></td><td><input id="prepod" name="prepod" type="checkbox"></td></tr>
+</table>
+<br><br><br>
+<h5>Вам буде направлено листa з вказівками ...</h5>
+<br><br><br>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 334.5 334.5" style="enable-background:new 0 0 334.5 334.5;" xml:space="preserve" width="20px" height="20px">
+<path d="M332.797,13.699c-1.489-1.306-3.608-1.609-5.404-0.776L2.893,163.695c-1.747,0.812-2.872,2.555-2.893,4.481  s1.067,3.693,2.797,4.542l91.833,45.068c1.684,0.827,3.692,0.64,5.196-0.484l89.287-66.734l-70.094,72.1  c-1,1.029-1.51,2.438-1.4,3.868l6.979,90.889c0.155,2.014,1.505,3.736,3.424,4.367c0.513,0.168,1.04,0.25,1.561,0.25  c1.429,0,2.819-0.613,3.786-1.733l48.742-56.482l60.255,28.79c1.308,0.625,2.822,0.651,4.151,0.073  c1.329-0.579,2.341-1.705,2.775-3.087L334.27,18.956C334.864,17.066,334.285,15.005,332.797,13.699z" fill="#FFFFFF"/>
+</svg>
+<input class="but" type="submit" value="Відправити">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 482.428 482.429" style="enable-background:new 0 0 482.428 482.429;" xml:space="preserve">
+		<path d="M381.163,57.799h-75.094C302.323,25.316,274.686,0,241.214,0c-33.471,0-61.104,25.315-64.85,57.799h-75.098    c-30.39,0-55.111,24.728-55.111,55.117v2.828c0,23.223,14.46,43.1,34.83,51.199v260.369c0,30.39,24.724,55.117,55.112,55.117    h210.236c30.389,0,55.111-24.729,55.111-55.117V166.944c20.369-8.1,34.83-27.977,34.83-51.199v-2.828    C436.274,82.527,411.551,57.799,381.163,57.799z M241.214,26.139c19.037,0,34.927,13.645,38.443,31.66h-76.879    C206.293,39.783,222.184,26.139,241.214,26.139z M375.305,427.312c0,15.978-13,28.979-28.973,28.979H136.096    c-15.973,0-28.973-13.002-28.973-28.979V170.861h268.182V427.312z M410.135,115.744c0,15.978-13,28.979-28.973,28.979H101.266    c-15.973,0-28.973-13.001-28.973-28.979v-2.828c0-15.978,13-28.979,28.973-28.979h279.897c15.973,0,28.973,13.001,28.973,28.979    V115.744z" fill="#FFFFFF"/>
+		<path d="M171.144,422.863c7.218,0,13.069-5.853,13.069-13.068V262.641c0-7.216-5.852-13.07-13.069-13.07    c-7.217,0-13.069,5.854-13.069,13.07v147.154C158.074,417.012,163.926,422.863,171.144,422.863z" fill="#FFFFFF"/>
+		<path d="M241.214,422.863c7.218,0,13.07-5.853,13.07-13.068V262.641c0-7.216-5.854-13.07-13.07-13.07    c-7.217,0-13.069,5.854-13.069,13.07v147.154C228.145,417.012,233.996,422.863,241.214,422.863z" fill="#FFFFFF"/>
+		<path d="M311.284,422.863c7.217,0,13.068-5.853,13.068-13.068V262.641c0-7.216-5.852-13.07-13.068-13.07    c-7.219,0-13.07,5.854-13.07,13.07v147.154C298.213,417.012,304.067,422.863,311.284,422.863z" fill="#FFFFFF"/>
+</svg>
+<input class="but" type="reset" value="Очистити">
+</form>
+
+</body>
+</html>
