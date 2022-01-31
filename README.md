@@ -35,3 +35,7 @@
 - Open source
 - Enjoy it
 
+## Resourses
+
+[User Tutorial](docs/Tutorial.pdf)
+
