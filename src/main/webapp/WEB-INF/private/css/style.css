@@ -1,0 +1,176 @@
+
+body {
+    background: #eee; /* fallback for old browsers */
+    font-family: "Helvetica", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+/* no spinner */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
+.container {
+    margin-bottom: 5em; margin-top: 2em; margin-left: 0px; margin-right: 0px; width: auto
+}
+
+
+table, tr, th, td, button, h2, h3 {
+ font-family: "Helvetica", sans-serif;
+-webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;  
+}
+
+table {
+box-shadow: rgba(0,0,0,0.14902) 4px 4px 4px 0px,rgba(0,0,0,0.09804) -4px 4px 10px 0px;
+}
+
+th {
+font-weight: 400;
+}
+
+
+td a {
+   color: black;
+}
+
+td span {
+    cursor: pointer;
+}
+
+span :hover {
+  color: blue;
+  font-style: bold;
+}
+
+.for_title {
+    color: #636363;
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+
+#year_summary{
+    font-size: 180%;
+    vertical-align: bottom !important;
+}
+
+input.ng-invalid, #sel_work.ng-invalid
+{
+  border:1px solid red !important;
+}
+
+
+input.dissabled
+{
+    color: white;
+}
+
+#forbutton {
+    margin-top: 1em;
+    margin-left: 0.3em
+}
+
+#forbutton button{
+    margin-right: 1em;
+    padding-left: 1.5em;
+    padding-right:1.5em;
+    margin-bottom: 1em;
+}
+
+#forpicker {
+    font-size: 1.1em;
+    margin-right: 0.3em;
+}
+
+span {
+    font-family: "Helvetica", sans-serif;
+}
+
+
+
+#totop {
+  position:fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+
+button span {
+    font-family: Helvetica, sans-serif;
+}
+
+
+.fortable * {
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+}
+
+.fortable div {
+    margin-top: 0.4em;
+}
+
+
+.fortable * > label {
+    color: darkblue;
+    margin-left: -1em;
+    font-weight: 600;
+}
+
+.has-error label {
+    color: red;
+}
+
+
+.fortable img, #forswitch {
+    margin-left: -1em;
+}
+
+.fortable img label {
+    margin-left: -1em;
+}
+
+@media (max-width: 768px) {
+    .for_title {
+        font-size: 135%;
+        text-align: left !important;
+    }
+}
+
+#allert_mes {
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+}
+
+.for_image {
+    text-align: center;
+}
+
+.for_image img {
+    display: inline-block !important;
+    margin: 0px 0px -10px !important;
+    padding: 0px;
+}
+
+
+#for_alert {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 150px;
+}

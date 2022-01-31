@@ -1,0 +1,82 @@
+
+body {
+    background: #eee; /* fallback for old browsers */
+    font-family: "Helvetica", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+thead tr {
+    background-color: #d8c6a2;
+}
+
+#forbutton {
+    margin-top: 1em;
+}
+
+#forbutton * button {
+    font-family: "Helvetica", sans-serif;
+}
+
+#forbutton button {
+   padding-left:  2.5em;
+   padding-right: 2.5em;
+}
+
+
+div .alert-warning {
+    padding: 0.45em;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: #d8c6a2;
+    border-color: gainsboro;
+    border-width: 1px;
+}
+
+
+
+
+#title1, #title2 {
+    color: #636363;
+    font-weight: 800;
+    font-size: 2em;
+}
+
+#title2 {
+    margin-top: 0.7em;
+    font-size: 160%;
+}
+
+.fortable {
+    margin-bottom: 0.5em;
+}
+
+.fortable *  {
+    padding-left: 1.3em;
+    padding-right: 1.3em;
+}
+
+.fortable div {
+    margin-top: 0.9em;
+}
+
+.fortable * > label {
+    color: darkblue;
+    margin-left: -1em;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+table {
+    margin-bottom: 0 !important;
+}
+
+.forbutspan {
+   margin: 0.5%;
+}
+
+div .panel-group {
+    margin-bottom: 0;
+}

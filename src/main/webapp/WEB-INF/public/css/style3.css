@@ -1,0 +1,117 @@
+body, html {
+    background: #eee;
+    -webkit-font-smoothing: antialiased;
+}
+
+#myColomn {
+    background: #eee;
+}
+
+
+.login {
+    margin-top: 2em;
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+}
+
+h1, h2 {
+    color: #636363;
+}
+
+h3, h4 {
+    color: #4a89dc;
+}
+
+/* Form Styles */
+#logform {
+    margin: 2em;
+    padding: 4em 2em 2em 2em;
+    background: #d8c6a2;
+    border: 1px solid #d8c4a1;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 4px 4px 0px, rgba(0, 0, 0, 0.09804) 0px 4px 8px 0px;
+}
+
+#logform * button {
+    margin-top: 1.2em;
+    font-size: 120%;
+    font-family: Helvetica, sans-serif;
+    width: 100%; height: 2.6em;
+}
+
+
+input:-webkit-autofill {
+    border: 0px !important;
+    outline:none!important;
+    background: none!important;
+    background-color: transparent!important;
+}
+
+
+
+footer img:hover {
+    opacity: .8;
+}
+
+footer img:focus,
+footer a:focus {
+    outline: none;
+}
+
+#forimage  {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-top: 5em;
+}
+
+
+.forlabelinput {
+    padding-left: 4em;
+}
+
+
+.has-error {
+    color: red;
+}
+
+
+#subtitle {
+    color: blue;
+}
+
+.forItems {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.forItems h4 {
+    text-align: center;
+    margin: 2em;
+}
+
+.forItems button, #likebutton {
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-bottom: 1em;
+}
+
+#likebutton {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
+
+#selectform * label {
+    text-align: left;
+}
+
+
+.input-group-addon {
+    border: none;
+    background: #d8c6a2 !important;
+}
